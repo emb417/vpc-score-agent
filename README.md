@@ -7,7 +7,7 @@ A lightweight background agent that bridges VPX plugin score events to the VPC D
 ## How it works
 
 1. PinUp Popper launches `vpc-score-agent.exe` when a table starts, passing the table's VPS ID, version, and ROM name as arguments
-2. The agent connects to the VPX plugin's local WebSocket on port 3131
+2. The agent connects to the VPX plugin's local WebSocket on port 3123
 3. Each event received (game_start, current_scores, game_end) is enriched with the player's identity and table context, then forwarded to the VPC Data API
 4. If the upstream connection drops, events are buffered locally and flushed when connectivity resumes
 5. PinUp Popper's close script signals the agent to stop cleanly when the table exits
@@ -18,7 +18,7 @@ A lightweight background agent that bridges VPX plugin score events to the VPC D
 
 - [PinUp Popper](https://www.nailbuster.com/wikipinup/doku.php) installed and configured
 - VPS CSV imported into PinUp Popper (see setup below)
-- VPX score plugin installed and running (provides the local WebSocket on port 3131)
+- VPX score plugin installed and running (provides the local WebSocket on port 3123)
 - Your Discord user ID and username (see Identity Setup below)
 
 ---

@@ -27,7 +27,7 @@ import (
 // ---------------------------------------------------------------------------
 
 const (
-	vpxPluginWSURL      = "ws://127.0.0.1:3131"
+	vpxPluginWSURL      = "ws://127.0.0.1:3123"
 	vpcAPIBase          = "https://virtualpinballchat.com"
 	vpcEventsPath       = "/vpc/api/v2/events"
 	reconnectDelay      = 5 * time.Second
