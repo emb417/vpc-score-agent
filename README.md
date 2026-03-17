@@ -62,16 +62,11 @@ start "" "C:\vPinball\vpc-score-agent\vpc-score-agent.exe" --vpsId "[CUSTOM2]" -
 Replace:
 
 - `C:\vPinball\vpc-score-agent\` with the actual path where you placed `vpc-score-agent.exe`
-- `YOUR_DISCORD_USER_ID` with your Discord user ID (e.g. `718313274164117505`)
-- `your_discord_username` with your Discord username in lowercase (e.g. `emb417`)
+- `YOUR_DISCORD_USER_ID` with your Discord user ID (e.g. `123456789012345678`)
+- `your_discord_username` with your Discord username in lowercase (e.g. `apollo`)
 
 The `[CUSTOM2]`, `[GAMEVER]`, and `[ROMNAME]` variables are substituted automatically by PinUp Popper — do not replace these.
 
-**Example with real values:**
-
-```bat
-start "" "C:\vPinball\vpc-score-agent\vpc-score-agent.exe" --vpsId "[CUSTOM2]" --version "[GAMEVER]" --rom "[ROMNAME]" --userId "718313274164117505" --username "emb417"
-```
 
 #### Close Script (runs when a table exits)
 
